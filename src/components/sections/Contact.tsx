@@ -49,8 +49,7 @@ export function Contact() {
             something great.
           </h2>
           <p className="mt-6 max-w-md text-sm text-creme/60">
-            Available for freelance edits, newsroom collaborations and full-time roles starting
-            2026.
+            Available for freelance edits, newsroom collaborations and full-time roles.
           </p>
           <div className="mt-10 space-y-5 text-creme/80">
             <a
