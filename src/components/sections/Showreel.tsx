@@ -100,12 +100,14 @@ export function Showreel() {
 
         <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-4">
           {reels.map((reel) => (
-            <button
+            <a
               key={reel.id}
-              type="button"
+              href={reel.link}
+              target="_blank"
+              rel="noreferrer noopener"
               onClick={() => setSelectedReel(reel)}
               aria-pressed={selectedReel.id === reel.id}
-              aria-label={`Select ${reel.title}`}
+              aria-label={`Open ${reel.title}`}
               className={`ease-cinema group relative aspect-video overflow-hidden rounded-xl border transition-transform duration-300 hover:-translate-y-1 hover:scarlet-glow ${
                 selectedReel.id === reel.id ? "border-scarlet shadow-[0_0_28px_rgba(236,97,108,0.2)]" : "border-creme/10"
               }`}
@@ -120,7 +122,7 @@ export function Showreel() {
               <div className="absolute inset-0 flex items-center justify-center bg-ink/40 opacity-0 transition-opacity group-hover:opacity-100">
                 <Play className="h-6 w-6 text-scarlet" fill="currentColor" />
               </div>
-            </button>
+            </a>
           ))}
         </div>
       </div>
