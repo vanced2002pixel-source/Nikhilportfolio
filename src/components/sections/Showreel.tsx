@@ -15,14 +15,7 @@ const reels = [
     src: rang,
     alt: "Rang Lahore Da thumbnail",
   },
-  {
-    id: "blood",
-    title: "Blood on Brush",
-    subtitle: "Reels Collection",
-    link: "https://drive.google.com/drive/folders/1KyqSS1JUOiIkRlSCIm9aRMnMtVQOK_7N",
-    src: blood,
-    alt: "Blood on Brush thumbnail",
-  },
+
   {
     id: "freedom",
     title: "Freedom Speech",
