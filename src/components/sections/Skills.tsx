@@ -5,7 +5,6 @@ const skills = [
   { label: "After Effects", value: 85 },
   { label: "Motion Graphics", value: 90 },
   { label: "Photoshop", value: 80 },
-  { label: "Blender", value: 60 },
 ];
 
 export function Skills() {
