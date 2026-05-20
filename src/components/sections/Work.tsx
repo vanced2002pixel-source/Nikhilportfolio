@@ -11,7 +11,6 @@ const projects: Project[] = [
     category: "Music Video",
     description: "Cinematic music video for the School of Journalism & Mass Communication.",
     image: rang,
-    span: "tall",
   },
   {
     title: "Blood on Brush",
@@ -24,7 +23,6 @@ const projects: Project[] = [
     category: "Internship · Newsroom",
     description: "Daily broadcast edits, social cutdowns and motion lower-thirds.",
     image: times,
-    span: "wide",
   },
   {
     title: "Freedom of Speech",
@@ -61,7 +59,7 @@ export function Work() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 md:grid-rows-2 md:auto-rows-fr">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((p, i) => (
             <ProjectCard key={p.title} p={p} index={i} />
           ))}
