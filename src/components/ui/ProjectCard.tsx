@@ -10,12 +10,7 @@ export type Project = {
 };
 
 export function ProjectCard({ p, index }: { p: Project; index: number }) {
-  const span =
-    p.span === "tall"
-      ? "md:row-span-2 aspect-[3/5]"
-      : p.span === "wide"
-        ? "md:col-span-2 aspect-[16/10]"
-        : "aspect-[4/5]";
+  const span = "aspect-[4/5]";
 
   return (
     <motion.article
